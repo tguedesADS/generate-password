@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif;
+font-family: "Anta", sans-serif; */
+
+* {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #18181B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container_input {
+    max-width: 480px;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    outline: none;
+    height: 17px;
+    margin-top: 8px;
+}
+
+.button {
+    margin-top: 40px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #3EB72B;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow: inset 0 1px 0 #bbf4b2, 0 10px 0 #138a01;
+    -moz-box-shadow: inset 0 1px 0 #bbf4b2, 0 10px 0 #138a01;
+    box-shadow: inset 0 1px 0 #bbf4b2, 0 10px 0 #138a01;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button:active {
+    top: 10px;
+    background-color: #3EB72B;
+
+    -webkit-box-shadow: inset 0 1px 0 #bbf4b2, inset 0 -3px 0 #138a01;
+    -moz-box-shadow: inset 0 1px 0 #bbf4b2, inset 0 -3pxpx 0 #138a01;
+    box-shadow: inset 0 1px 0 #bbf4b2, inset 0 -3px 0 #138a01;
+}
+
+.button:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #052501;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container_password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+}
+
+#txt_password{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+#password{
+    height: 50px;
+    width: 80%;
+    background-color: rgb(0, 0, 0, 0.40);
+    border-radius: 4px;
+    border: 1px solid #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.5s;
+}
+#password:hover{
+    transform: scale(1.05);
+}
+
+#txt_hide{
+    color: #fff;
+    width: 80%;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container_password:hover #txt_hide{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 480px) {
+    #logo {
+        max-width: 390px;
+        margin-bottom: 20px;
+    }
+}

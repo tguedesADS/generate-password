@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+    <link rel="manifest" href="./image/site.webmanifest">
+    <title>Gerador de Senha</title>
+</head>
+
+<body>
+
+    <img src="./image/logo" id="logo" alt="Gerador de senha">
+
+    <main class="container_input">
+        <p>Escolha o tamanho: <span id="value_password"></span> caracteres.</p>
+
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+
+        <button id="btn" class="button">Gerar senha</button>
+    </main>
+
+    <div id="container_password" class="container_password hide">
+
+        <p id="txt_password">Sua senha gerada foi:</p>
+        <span id="password" class="password"></span>
+        <p id="txt_hide">Clique na senha para copiar. 👆</p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
